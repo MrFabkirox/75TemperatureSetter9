@@ -15,10 +15,10 @@ public class ControllerTs {
 		double value = 0;
 		try {
 			value = Double.valueOf(v.getEntry());
+			m.setTemperature(value);
 		} catch(Exception e) {
 			v.displayError("Set number here");
 		}
-		m.setTemperature(value);
 	}
 
 	public void upValue() {
